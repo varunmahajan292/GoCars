@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PaymentMethod.PaymentMethodFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/text_payment"
+                android:layout_width="match_parent"
+                android:text="Payment Details"
+                android:layout_marginTop="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+
+
+            <RadioButton
+                android:id="@+id/credit"
+                android:layout_marginTop="20dp"
+                android:text=" CREDIT"
+                android:layout_below="@+id/text_payment"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/debit"
+                android:layout_marginTop="20dp"
+                android:text=" DEBIT"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/text_payment"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:checked="true"
+                android:layout_marginRight="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint=" Name On Card"
+                android:layout_below="@+id/credit"
+                android:background="@drawable/etstyles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edit_num"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Card Number"
+                android:layout_below="@+id/edit_name"
+                android:background="@drawable/etstyles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/visa"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/imgvisa2"
+                android:layout_below="@id/edit_num"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <ImageView
+                android:id="@+id/american"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/visa"
+                android:src="@drawable/american"
+                android:layout_below="@id/edit_num"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <ImageView
+                android:id="@+id/master"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/american"
+                android:src="@drawable/mastercard"
+                android:layout_below="@id/edit_num"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <EditText
+                android:id="@+id/edit_month"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Month"
+                android:layout_below="@+id/american"
+                android:background="@drawable/etstyles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edit_year"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint="year"
+                android:layout_below="@+id/edit_month"
+                android:background="@drawable/etstyles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/security"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Security Code"
+                android:layout_below="@+id/edit_year"
+                android:background="@drawable/etstyles"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/review"
+                android:layout_below="@+id/security"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:text="Review Order"
+
+                android:background="@color/colorAccent"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

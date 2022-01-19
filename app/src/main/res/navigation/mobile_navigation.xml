@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_newBooking">
+
+    <fragment
+        android:id="@+id/nav_city"
+        android:name="com.example.gocars.ui.Change_City.ChangeCityFragment"
+        android:label="Change City"
+        tools:layout="@layout/fragment_change_city">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.gocars.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_city" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_newBooking"
+        android:name="com.example.gocars.ui.NewBooking.NewBookingFragment"
+        android:label="New Booking"
+        tools:layout="@layout/fragment_new_booking" />
+    <fragment
+        android:id="@+id/nav_myBooking"
+        android:name="com.example.gocars.ui.MyBooking.MyBookingFragment"
+        android:label="My Booking"
+        tools:layout="@layout/fragment_my_booking" />
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.example.gocars.ui.AccountDetails.AccountFragment"
+        android:label="Account Details"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/nav_cpass"
+        android:name="com.example.gocars.ui.ChangePassword.ChangePasswordFragment"
+        android:label="Change Password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/nav_payment"
+        android:name="com.example.gocars.ui.PaymentMethod.PaymentMethodFragment"
+        android:label="Payment Method"
+        tools:layout="@layout/fragment_payment_method" />
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.example.gocars.ui.Help.HelpFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.gocars.ui.Logout.LogoutFragment"
+        android:label="Logout"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.gocars.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.gocars.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.gocars.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>

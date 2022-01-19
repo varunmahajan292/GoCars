@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">GoCars</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="spinner_economy">
+        <item>Class Type</item>
+        <item>Economy</item>
+        <item>Luxurious</item>
+    </string-array>
+    <string-array name="spinner_seater">
+        <item>No. of Seats</item>
+        <item>2 Seats</item>
+        <item>5 Seats</item>
+        <item>7 Seats</item>
+        <item>9 Seats</item>
+    </string-array>
+    <string-array name="spinner_doors">
+        <item>No. of Doors</item>
+        <item>2 Doors</item>
+        <item>4 Doors</item>
+
+    </string-array>
+    <string-array name="spinner_mode">
+        <item>Driving Mode</item>
+        <item>Automatic</item>
+        <item>Manual</item>
+
+    </string-array>
+    <string-array name="spinner_cool">
+        <item>Cooling Type</item>
+        <item>Air Conditioner</item>
+        <item>Non AC</item>
+
+    </string-array>
+    <string-array name="spinner_Model_type">
+        <item> Model Type</item>
+        <item> Caravan</item>
+        <item> Family Car</item>
+    </string-array>
+    <string-array name="spinner_Model_year">
+        <item>Model(year)</item>
+        <item>1995</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_city"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Change City" />
+
+        <item
+            android:id="@+id/nav_newBooking"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="New Booking" />
+        <item
+            android:id="@+id/nav_myBooking"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="My Booking" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Account Details" />
+        <item
+            android:id="@+id/nav_cpass"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Payment Method" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Logout" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+    </group>
+</menu>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Upload_CarFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Enter Your Personal Details" />
+
+           <TextView
+               android:id="@+id/tname"
+               android:text="Name"
+               android:textSize="20sp"
+               android:layout_below="@+id/text"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="30dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <EditText
+           android:id="@+id/efname"
+           android:layout_below="@+id/text"
+           android:layout_width="match_parent"
+           android:padding="10dp"
+               android:layout_marginRight="20dp"
+           android:background="@drawable/etstyles"
+           android:hint="Enter First Name"
+           android:layout_marginTop="20sp"
+           android:layout_marginLeft="40dp"
+           android:layout_toRightOf="@+id/tname"
+           android:layout_height="wrap_content"/>
+
+           <TextView
+               android:id="@+id/tdob"
+               android:text="DOB"
+               android:textSize="20sp"
+               android:layout_below="@+id/tname"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="30dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+           <EditText
+               android:id="@+id/edate"
+               android:layout_below="@+id/efname"
+               android:layout_width="wrap_content"
+               android:padding="10dp"
+               android:background="@drawable/etstyles"
+               android:hint="DOB"
+               android:layout_marginTop="20sp"
+               android:layout_marginLeft="40dp"
+               android:layout_toRightOf="@+id/tname"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:id="@+id/tphon"
+               android:text="Phone"
+               android:textSize="20sp"
+               android:layout_below="@+id/tdob"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="40dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <EditText
+               android:id="@+id/ephone"
+               android:layout_below="@+id/edate"
+               android:layout_width="wrap_content"
+               android:padding="10dp"
+               android:background="@drawable/etstyles"
+               android:hint="enter phone number"
+               android:layout_marginTop="20sp"
+               android:layout_marginLeft="40dp"
+               android:layout_toRightOf="@+id/tphon"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:id="@+id/temail"
+               android:text="Email"
+               android:textSize="20sp"
+               android:layout_below="@+id/tphon"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="40dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+           <EditText
+               android:id="@+id/eemail"
+               android:layout_below="@+id/ephone"
+               android:layout_width="wrap_content"
+               android:padding="10dp"
+               android:background="@drawable/etstyles"
+               android:hint="enter your email first name"
+               android:layout_marginTop="20sp"
+               android:layout_marginLeft="40dp"
+               android:layout_toRightOf="@+id/temail"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:id="@+id/tlince"
+               android:text="Licence"
+               android:textSize="20sp"
+               android:layout_below="@+id/temail"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="40dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+           <EditText
+               android:id="@+id/elince"
+               android:layout_below="@+id/eemail"
+               android:layout_width="wrap_content"
+               android:padding="10dp"
+               android:background="@drawable/etstyles"
+               android:hint="enter your licence number"
+               android:layout_marginTop="20sp"
+               android:layout_marginLeft="20dp"
+               android:layout_toRightOf="@+id/tlince"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:id="@+id/tadd"
+               android:text="Address"
+               android:textSize="20sp"
+               android:layout_below="@+id/tlince"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="40dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <EditText
+               android:id="@+id/estreet"
+               android:layout_below="@+id/elince"
+               android:layout_width="match_parent"
+               android:padding="10dp"
+               android:layout_marginRight="20dp"
+               android:background="@drawable/etstyles"
+               android:hint="enter your email first name"
+               android:layout_marginTop="20sp"
+               android:layout_marginLeft="20dp"
+               android:layout_toRightOf="@+id/tadd"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:id="@+id/street"
+               android:layout_below="@+id/estreet"
+               android:text="Street Address"
+               android:layout_marginTop="3dp"
+               android:layout_marginLeft="120dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <EditText
+               android:id="@+id/ecity"
+               android:padding="10dp"
+               android:hint="enter your city"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/street"
+               android:layout_marginLeft="110dp"
+               android:background="@drawable/etstyles"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <EditText
+               android:id="@+id/estate"
+               android:padding="10dp"
+               android:hint="enter your state"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/street"
+               android:layout_marginRight="10dp"
+              android:layout_alignParentRight="true"
+               android:background="@drawable/etstyles"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:id="@+id/city"
+               android:layout_below="@+id/ecity"
+               android:text="City"
+               android:layout_marginTop="3dp"
+               android:layout_marginLeft="120dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:id="@+id/state"
+               android:layout_below="@+id/estate"
+               android:text="Province"
+               android:layout_marginTop="3dp"
+              android:layout_alignParentRight="true"
+               android:layout_marginRight="70dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <EditText
+               android:id="@+id/ezip"
+               android:padding="10dp"
+               android:hint="EnPostal code"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/city"
+               android:layout_marginLeft="110dp"
+               android:background="@drawable/etstyles"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <EditText
+               android:id="@+id/ecountry"
+               android:padding="10dp"
+               android:hint="country name"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/state"
+               android:layout_marginRight="10dp"
+               android:layout_alignParentRight="true"
+               android:background="@drawable/etstyles"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:id="@+id/zip"
+               android:layout_below="@+id/ezip"
+               android:text="Postal Code"
+               android:layout_marginTop="3dp"
+               android:layout_marginLeft="120dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:id="@+id/country"
+               android:layout_below="@+id/ecountry"
+               android:text="Country"
+               android:layout_marginTop="3dp"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="70dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <Button
+               android:id="@+id/procced"
+               android:layout_below="@+id/zip"
+               android:text="Proceed To Next Page to enter vehicle details"
+               android:layout_marginTop="20dp"
+               android:layout_centerHorizontal="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

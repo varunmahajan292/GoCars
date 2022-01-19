@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.NewBooking.NewBookingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Search for a car"
+            android:textColor="@color/colorAccent"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_pickup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search"
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginTop="30dp"
+
+            android:layout_marginRight="30dp"
+            android:hint="  Enter pickup location"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/et_dropoff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_pickup"
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginTop="30dp"
+
+            android:layout_marginRight="30dp"
+            android:hint="  Enter drop-off location"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textreturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_dropoff"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Return to same location"
+            android:textSize="20dp" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_dropoff"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp" />
+
+
+        <Button
+            android:id="@+id/searchbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/switch1"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/colorAccent"
+            android:text="SEARCH" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
